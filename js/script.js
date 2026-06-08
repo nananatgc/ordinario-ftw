@@ -267,3 +267,49 @@ if(btnFrase){
         fraseAzar.textContent = frases[aleatoria];
     });
 }
+
+
+const btnXML = document.getElementById("btnXML");
+const resultadoXML = document.getElementById("resultadoXML");
+
+if(btnXML){
+    btnXML.addEventListener("click", () => {
+
+        resultadoXML.innerHTML = "<p>Cargando canciones</p>";
+
+        fetch("xml/canciones.xml")
+            .then(respuesta => {
+                if(!respuesta.ok){
+                    throw new Error("No se pudo cargar el archivo XML");
+                }
+                return respuesta.text();
+            })
+            .then(datos => {
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(datos, "application/xml");
+                const cancionesXML = xml.getElementsByTagName("cancion");
+
+                resultadoXML.innerHTML = "";
+
+                for(let i = 0; i < cancionesXML.length; i++){
+                    const artista = cancionesXML[i].getElementsByTagName("artista")[0].textContent;
+                    const titulo = cancionesXML[i].getElementsByTagName("titulo")[0].textContent;
+                    const genero = cancionesXML[i].getElementsByTagName("genero")[0].textContent;
+
+                    resultadoXML.innerHTML += `
+                        <article>
+                            <h3>${titulo}</h3>
+                            <p><strong>Artista:</strong> ${artista}</p>
+                            <p><strong>Género:</strong> ${genero}</p>
+                        </article>
+                    `;
+                }
+            })
+            .catch(error => {
+                resultadoXML.innerHTML = `
+                    <p>No se pudo cargar el XML</p>
+                `;
+                console.error("Error al cargar XML:", error);
+            });
+    });
+}

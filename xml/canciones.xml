@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<canciones>
+
+    <cancion>
+        <artista>Lana del Rey</artista>
+        <titulo>Gods and Monsters</titulo>
+        <genero>Pop</genero>
+    </cancion>
+
+    <cancion>
+        <artista>Madonna</artista>
+        <titulo>Like a Virgin</titulo>
+        <genero>Pop</genero>
+    </cancion>
+
+    <cancion>
+        <artista>Scorpions</artista>
+        <titulo>Still Loving You</titulo>
+        <genero>Rock</genero>
+    </cancion>
+
+    <cancion>
+        <artista>Depeche Mode</artista>
+        <titulo>Personal Jesus</titulo>
+        <genero>Rock</genero>
+    </cancion>
+
+    <cancion>
+        <artista>The Rolling Stones</artista>
+        <titulo>Heaven</titulo>
+        <genero>Rock</genero>
+    </cancion>
+
+    <cancion>
+        <artista>Electric Light Orchestra</artista>
+        <titulo>Strange Magic</titulo>
+        <genero>Rock</genero>
+    </cancion>
+
+    <cancion>
+        <artista>Ana Gabriel</artista>
+        <titulo>Ay Amor</titulo>
+        <genero>Pop</genero>
+    </cancion>
+
+    <cancion>
+        <artista>Lana del Rey</artista>
+        <titulo>Old Money</titulo>
+        <genero>Pop</genero>
+    </cancion>
+
+    <cancion>
+        <artista>The Beatles</artista>
+        <titulo>Something</titulo>
+        <genero>Rock</genero>
+    </cancion>
+
+    <cancion>
+        <artista>Berlin</artista>
+        <titulo>Take My Breath Away</titulo>
+        <genero>Pop</genero>
+    </cancion>
+
+</canciones>

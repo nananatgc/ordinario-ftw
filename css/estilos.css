@@ -246,3 +246,12 @@ tr:hover{
     margin: 25px 0;
     text-align: center;
 }
+
+.blog-imagen{
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+}
