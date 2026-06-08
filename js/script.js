@@ -259,7 +259,7 @@ const frases = [
 ];
 
 const btnFrase = document.getElementById("btnFrase");
-const fraseAzar = document.getElementById("fraseMotivacional");
+const fraseAzar = document.getElementById("fraseAzar");
 
 if(btnFrase){
     btnFrase.addEventListener("click", () => {
