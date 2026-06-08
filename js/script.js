@@ -1,17 +1,70 @@
-const messages = [
-    " “El secreto para salir adelante es empezar.” — Mark Twain ",
-    " “Sé más fuerte que la más fuerte de tus excusas.” ",
-    "“Lo único imposible es aquello que no intentas.” — Paulo Coelho",
-    "“No cuentes los días, haz que los días cuenten.” — Muhammad Ali",
-    "“Si la oportunidad no llama, construye una puerta.” — Milton Berle",
-    "“El éxito es la suma de pequeños esfuerzos repetidos día tras día.” — Robert Collier"
- 
+const canciones = [
+    {
+        artista: "Lana del rey",
+        cancion: "Gods and monsters",
+        genero: "Pop"
+    },
+    {
+        artista: "Madonna",
+        cancion: "Like a Virgin",
+        genero: "Pop"
+    },
+    {
+        artista: "Scorpions",
+        cancion: "Still loving you",
+        genero: "Rock"
+    },
+    {
+        artista: "Depeche Mode",
+        cancion: "Personal Jesus",
+        genero: "Rock"
+    },
+    {
+        artista: "The rolling stones",
+        cancion: "Heaven",
+        genero: "Rock"
+    },
+    {
+        artista: "Electric Light Orchestra",
+        cancion: "Strange magic",
+        genero: "Rock"
+    },
+    {
+        artista: "Ana Gabriel",
+        cancion: "Ay amor",
+        genero: "Pop"
+    },
+    {
+        artista: "Lana del rey",
+        cancion: "Old money",
+        genero: "Pop"
+    },
+    {
+        artista: "The Beatles",
+        cancion: "Something",
+        genero: "Rock"
+    },
+    {
+        artista: "Berlin",
+        cancion: "Take my breath away",
+        genero: "Pop"
+    }
 ];
 
-const button = document.getElementById("motivacionbtn");
-const message = document.getElementById("mensaje");
+const tablaMusica = document.getElementById("tablaMusica");
 
-button.addEventListener("click", () => {
-    const random = Math.floor(Math.random() * messages.length);
-    message.textContent = messages[random];
-});
+if(tablaMusica){
+
+    canciones.forEach(cancion => {
+
+        tablaMusica.innerHTML += `
+        <tr>
+            <td>${cancion.artista}</td>
+            <td>${cancion.cancion}</td>
+            <td>${cancion.genero}</td>
+        </tr>
+        `;
+
+    });
+
+}
