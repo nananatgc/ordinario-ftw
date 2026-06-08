@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viajes | Mi página, mi vida y así❤️🌸</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Viajes que he hecho y quiero hacer ✈️</h1>
+    <h1>✈️ Viajes que he hecho y quiero hacer ❤️</h1>
+
     <nav>
         <a href="index.html">Inicio</a>
         <a href="blog.html">Blog</a>
@@ -23,11 +26,31 @@
 </header>
 
 <main>
+
     <section>
-        <h2>Mis destinos</h2>
-        <p>Algunos lugares que me gustan, que he visitado o que me gustaría conocer.</p>
-//agregar una experiencia y lugares obvio
-        <input type="text" id="filtroViajes" placeholder="Filtrar destino">
+        <h2>Mis destinos favoritos 📍</h2>
+        <p>
+            Esta sección reúne algunos lugares que he visitado y otros que me gustaría conocer
+            Para mí, viajar significa descubrir nuevas experiencias, guardar recuerdos y conocer
+            lugares que algún  día vi en fotos y soñé con visitar
+        </p>
+    </section>
+
+    <section>
+        <h2>Buscar destino</h2>
+
+        <label for="filtroViajes">
+            Filtrar por destino, tipo o razón:
+        </label>
+
+        <input
+            type="text"
+            id="filtroViajes"
+            placeholder="Ejemplo: Oaxaca, Soñado, Playa...">
+    </section>
+
+    <section>
+        <h2>Lista de viajes ✨</h2>
 
         <table>
             <thead>
@@ -37,16 +60,44 @@
                     <th>Razón</th>
                 </tr>
             </thead>
-            <tbody id="tablaViajes">
-            </tbody>
+
+            <tbody id="tablaViajes"></tbody>
         </table>
     </section>
+
+    <section>
+        <h2>Galería de viajes 📸</h2>
+        <p>
+            Aquí dejo fotografías de lugares que he visitado y de destinos que quiero conocer
+        </p>
+
+        <div class="galeria">
+            <img src="img/viajes/oaxaca.jpg" alt="Destino Oaxaca">
+            <img src="img/viajes/playa.jpg" alt="Destino de playa soñado">
+            <img src="img/viajes/paris.jpg" alt="Viaje soñado a París">
+        </div>
+    </section>
+
+    <section>
+        <h2>¿Por qué quiero viajar?</h2>
+
+        <article>
+            <h3>Viajar como conocer y ver por mi propia cuenta</h3>
+            <p>
+                Viajar me parece una forma bonita de aprender y vivir experiencias
+                nuevas, también me gusta la idea de conocer lugares con historia, paisajes
+                hermosos y momentos que después se conviertan en recuerdos importantes
+            </p>
+        </article>
+    </section>
+
 </main>
 
 <footer>
-    <p>el límite es el cielo y el dinero</p>
+    <p> El límite es el cielo y el dinero💸❤️</p>
 </footer>
 
 <script src="js/script.js"></script>
+
 </body>
 </html>
