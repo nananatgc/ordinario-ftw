@@ -1,54 +1,116 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Música | Mi página, mi vida y dos</title>
+    <title>Mis gustos musicales 🎧❤️</title>
+
     <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
 
-<header>
-    <h1>Mis gustos musicales 🎧💕</h1>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="blog.html">Blog</a>
-        <a href="musica.html">Música</a>
-        <a href="peliculas.html">Películas</a>
-        <a href="vida.html">Mi vida</a>
-        <a href="visionboard.html">Vision Board</a>
-        <a href="viajes.html">Viajes</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
-</header>
+    <header>
 
-<main>
-    <section>
-        <h2>Canciones y artistas favoritos</h2>
-        <p>En esta sección comparto música que me gusta y canciones que forman parte de mi vida diaria
-            y les dejo el link de mi playlist de spotify y me siguen 🤨❤️
+        <h1>🎧 Mis gustos musicales 🎧❣️</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="blog.html">Blog</a>
+            <a href="musica.html">Música</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="vida.html">Mi vida</a>
+            <a href="visionboard.html">Vision Board</a>
+            <a href="viajes.html">Viajes</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section>
+
+            <h2>La música que acompaña mi vida 💖</h2>
+
+            <p>
+                La música forma parte de muchos momentos importantes de mi vida
+                Aquí comparto algunos artistas y canciones que me gustan
+            </p>
+
+        </section>
+
+        <section class="spotify-box">
+
+            <h2>🎵 Mi Playlist de Spotify 🎵</h2>
+
+            <p>
+                Puedes visitar mi playlist con el siguiente enlace:
+            </p>
+
+            <a
+                href="https://open.spotify.com/playlist/5nVOAmzwQlTdKAlhNwn3YP?si=2b363c70e8174204"
+                target="_blank"
+                class="btn">
+
+                Escuchar Playlist 💕
+            </a>
+
+        </section>
+
+        <section>
+
+            <h2>Buscar canciones</h2>
+
+            <label for="filtroMusica">
+                Filtrar por artista, canción o género:
+            </label>
+
+            <input
+                type="text"
+                id="filtroMusica"
+                placeholder="Ejemplo: Lana, Rock, Madonna...">
+
+        </section>
+
+        <section>
+
+            <h2>Mis canciones favoritas</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Artista</th>
+                        <th>Canción</th>
+                        <th>Género</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="tablaMusica">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+        <p>
+            🎀 Mi página, mi vida y así 🎀
         </p>
 
-        <input type="text" id="filtroMusica" placeholder="Filtrar artista o canción">
+    </footer>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Artista</th>
-                    <th>Canción</th>
-                    <th>Género</th>
-                </tr>
-            </thead>
-            <tbody id="tablaMusica">
-            </tbody>
-        </table>
-    </section>
-</main>
+    <script src="js/script.js"></script>
 
-<footer>
-    <p>Música que acompaña mis días</p>
-</footer>
-
-<script src="js/script.js"></script>
 </body>
+
 </html>
