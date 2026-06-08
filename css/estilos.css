@@ -238,3 +238,11 @@ tr:hover{
         padding: 22px;
     }
 }
+.spotify-box{
+    background: #fff0f7;
+    border: 2px solid #ffc1dc;
+    padding: 22px;
+    border-radius: 25px;
+    margin: 25px 0;
+    text-align: center;
+}
