@@ -1,40 +1,240 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-color:#ffd6e7;
-    font-family: Arial, sans-serif;
-    text-align:center;
-    margin:0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe3f1, #fff5fb, #ffd6e7);
+    color: #5c2742;
+    line-height: 1.6;
+}
+
+header{
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(214, 51, 132, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1{
+    color: #d63384;
+    margin-bottom: 15px;
+    font-size: 2rem;
 }
 
 nav{
-    background-color:white;
-    padding:20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 nav a{
-    text-decoration:none;
-    margin:10px;
-    color:#d63384;
-    font-weight:bold;
+    text-decoration: none;
+    color: #d63384;
+    background: #ffe3f1;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background: #ff69b4;
+    color: white;
+    transform: translateY(-3px);
 }
 
 main{
-    padding:40px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-h1{
-    color:#d63384;
+section, article{
+    background: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(214, 51, 132, 0.15);
 }
 
-button{
-    background-color:#ff69b4;
-    color:white;
-    border:none;
-    padding:12px 20px;
-    border-radius:20px;
-    cursor:pointer;
-    font-size:16px;
+h2{
+    color: #d63384;
+    margin-bottom: 15px;
 }
 
-button:hover{
-    transform:scale(1.05);
+h3{
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+p{
+    margin-bottom: 15px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+button, .btn{
+    display: inline-block;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover{
+    background: #d63384;
+    transform: scale(1.05);
+}
+
+footer{
+    text-align: center;
+    background: white;
+    color: #d63384;
+    padding: 25px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.blog-card{
+    padding: 0;
+    overflow: hidden;
+}
+
+.blog-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.blog-content{
+    padding: 22px;
+}
+
+
+form{
+    max-width: 550px;
+    margin: 25px auto;
+    background: #fff7fb;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(214, 51, 132, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label{
+    color: #d63384;
+    font-weight: bold;
+    text-align: left;
+}
+
+input, textarea{
+    padding: 13px;
+    border: 2px solid #ffc1dc;
+    border-radius: 18px;
+    font-size: 1rem;
+    outline: none;
+    font-family: inherit;
+}
+
+textarea{
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus, textarea:focus{
+    border-color: #ff69b4;
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+th{
+    background: #ff69b4;
+    color: white;
+    padding: 14px;
+}
+
+td{
+    padding: 14px;
+    border-bottom: 1px solid #ffd6e7;
+}
+
+tr:hover{
+    background: #fff0f7;
+}
+
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 0 8px 20px rgba(214, 51, 132, 0.18);
+    transition: 0.3s;
+}
+
+.galeria img:hover{
+    transform: scale(1.04) rotate(-1deg);
+}
+
+
+@media(max-width: 768px){
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a{
+        width: 90%;
+    }
+
+    main{
+        margin: 25px auto;
+    }
+
+    section, article{
+        padding: 22px;
+    }
 }
