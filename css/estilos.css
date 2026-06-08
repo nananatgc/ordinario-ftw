@@ -255,3 +255,35 @@ tr:hover{
     display: block;
     margin: 15px auto;
 }
+
+.foto-inicio{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 25px auto;
+    border: 8px solid white;
+    box-shadow: 0 10px 25px rgba(214, 51, 132, 0.25);
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.red-social{
+    text-decoration: none;
+    background: #ff69b4;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.red-social:hover{
+    background: #d63384;
+    transform: translateY(-3px);
+}
